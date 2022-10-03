@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+:root {
+    --cor1: #F0EFF4;
+    --cor2: #517EB7;
+    --cor3: #223657;
+    --cor4: #363636;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body {
+    font-family: "Ubuntu", sans-serif;
+}
+
+/* Header/Main Page */
+
+.main-header {
+    height: 100vh;
+    background-image: url('./images/bg-1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    padding-left: 10em;
+    padding-right: 10em;
+}
+.image-logo {
+    width: 12em;
+}
+.right-column ul li {
+    list-style-type: none;
+}
+.right-column ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+}
+
+/* Left Side Menu (Large Screens "Display: None") */
+
+.left-menu-hidden {
+    position: absolute;
+    width: 15em;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.801);
+    color: white;
+    z-index: 3;
+    display: none;
+}
+.left-menu-hidden ul li {
+    list-style-type: none;
+    padding: 3.5em 0;
+}
+.left-menu-hidden ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+/* Hamburger button */
+
+.hamburger-button-box {
+    width: 1.5em;
+    position: fixed;
+    top: 2em;
+    right: 4em;
+    display: none;
+}
+
+/* Main Section / Presentation Section */
+
+.main-content {
+    max-width: 55em;
+}
+.main-content h1 {
+    font-size: 6em;
+    font-weight: 700;
+}
+.main-content p {
+    font-size: 1.2em;
+    letter-spacing: 0.3em;
+    line-height: 1.2em;
+    font-weight: 400;
+}
+.main-content button {
+    background-color: var(--cor1);
+    color: var(--cor2);
+    font-weight: 700;
+    border: none;
+    padding: 0.3em 1em;
+    font-size: 0.9em;
+}
+
+/* Number Views Section */
+
+.number-box {
+    width: 4em;
+    height: 4em;
+    border: 3px solid var(--cor2);
+    color: var(--cor2);
+    border-radius: 100%;
+}
+.number-box p {
+    font-size: 1.5em;
+}
+.mile-views {
+    color: var(--cor2);
+    font-weight: 400;
+    font-size: 0.7em;
+    letter-spacing: 0.4em;
+    padding: 1em 0;
+}
+
+/* In the mountain Section */
+
+.mountain-section h2 {
+    color: var(--cor3);
+    font-size: 2.8em;
+    font-weight: 400;
+}
+.text-content-left, .text-content-right {
+    width: 23em;
+}
+.text-content-left, .text-content-right p {
+    text-align: justify;
+    color: var(--cor3);
+    letter-spacing: 0.05em;
+    line-height: 1.2em;
+}
+
+/* Section - Centered Image */
+
+.center-image-box {
+    width: 25em;
+}
+
+/* Section Legend 2 */
+
+.section-legend-2 {
+    background-image: url('./images/bg-3.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+.upcoming-hike-box {
+    padding: 15em 5em;
+    color: white;
+}
+.number-box-2 {
+    width: 4em;
+    height: 4em;
+    border: 3px solid white;
+    color: white;
+    border-radius: 100%;
+}
+.number-box-2 p {
+    font-size: 1.5em;
+}
+.upcoming-hike {
+    color: white;
+    font-weight: 400;
+    font-size: 0.7em;
+    letter-spacing: 0.4em;
+    padding: 1em 0;
+}
+.upcoming-hike-box h2 {
+    color: white;
+    font-size: 2.8em;
+    font-weight: 400;
+    padding-bottom: 0.6em;
+}
+.upcoming-hike-description {
+    font-size: 1.1em;
+}
+
+        /* Right Side - Events Dates */
+
+.events-content-box {
+    width: 26em;
+}
+.month {
+    background-color: #e9e7e7a2;
+    color: var(--cor3);
+    font-size: 0.9em;
+    font-weight: 500;
+}
+.month, .event-box {
+    padding: 1em;
+}
+.event-box {
+    background-color: #788cad7f;
+    margin-top: 0.7em;
+    box-shadow: 2px 2px 10px black;
+}
+.event-box p {
+    margin: 0;
+}
+.month-back {
+    background-color: white;
+    color: var(--cor3);
+    font-size: 0.9em;
+    padding: 0.2em 0.9em;
+}
+.number-day {
+    border: 1px solid white;
+    font-size: 1.2em;
+    padding: 0.5em 0.8em;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.month-right {
+    padding-left: 1.5em;
+}
+.event-name {
+    font-weight: bold;
+    font-size: 1.1em;
+    padding-bottom: 0.5em;
+}
+.events_days {
+    font-weight: 300;
+    font-size: 0.9em;
+    letter-spacing: 0.2em;
+}
+
+/* Section Legend 3 - Aventure Awaits */
+
+.section-legend-3 {
+    background-image: url('./images/bg-4.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+.number-box-3 {
+    width: 4em;
+    height: 4em;
+    border: 3px solid white;
+    color: white;
+    border-radius: 100%;
+    box-shadow: 0 0 5px rgb(0 0 0 / 80%);
+}
+.aventure-awaits {
+    color: white;
+    font-weight: 400;
+    font-size: 0.7em;
+    letter-spacing: 0.4em;
+    padding: 1em 0;
+}
+.number-box-3 p {
+    font-size: 1.5em;
+    text-shadow: 0 0 5px rgb(0 0 0 / 80%);
+}
+.aventure-awaits-box h2 {
+    font-size: 2.8em;
+    font-weight: 400;
+    padding-bottom: 0.6em;
+}
+.aventure-item {
+    width: 17em;
+    color: white;
+    margin: 0 0.7em;
+}
+.aventure-image-box {
+    width: 4em;
+}
+.aventure-item p {
+    margin: 0;
+}
+.aventure-description {
+    font-size: 0.8em;
+    line-height: 1.2em;
+}
+.aventure-title {
+    font-size: 1.1em;
+    letter-spacing: 0.5em;
+}
+.aventure-item button {
+    background-color: var(--cor1);
+    color: var(--cor2);
+    font-weight: 700;
+    border: none;
+    padding: 0.3em 1em;
+    font-size: 0.9em;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--cor3);
+}
+footer a {
+    color: var(--cor2);
+    text-decoration: none;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 992px) {
+    .image-logo {
+        width: 9em;
+        padding-top: 1em;
+    }
+    .list-content {
+        display: none;
+    }
+    .hamburger-button-box {
+        display: block;
+    }
+    .main-content h1 {
+        font-size: 1.9em;
+        text-align: center;
+    }
+    .main-content p {
+        font-size: 0.8em;
+    }
+    .main-button-box {
+        text-align: center;
+    }
+    .number-views-section {
+        margin-top: -25px;
+        padding-bottom: 0;
+    }
+    .text-content-left, .text-content-right {
+        width: 100%;
+    }
+    .text-content-left, .text-content-right p {
+        font-size: 0.8em;
+    }
+    .upcoming-hike-box {
+        text-align: center;
+        width: 85%;
+        padding: 0;
+        padding-top: 4em;
+        padding-bottom: 2em;
+    }
+    .number-box-2 {
+        margin: auto;
+    }
+    .events-content-box {
+       width: 85%; 
+    }  
+
+}
