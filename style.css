@@ -68,8 +68,8 @@ body {
 .hamburger-button-box {
     width: 1.5em;
     position: fixed;
-    top: 2em;
-    right: 4em;
+    top: 1em;
+    right: 2em;
     display: none;
 }
 
