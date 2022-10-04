@@ -42,7 +42,6 @@ body {
 /* Left Side Menu (Large Screens "Display: None") */
 
 .left-menu-hidden {
-    position: absolute;
     width: 15em;
     height: 100vh;
     position: fixed;
@@ -71,6 +70,7 @@ body {
     top: 1em;
     right: 2em;
     display: none;
+    cursor: pointer;
 }
 
 /* Main Section / Presentation Section */
